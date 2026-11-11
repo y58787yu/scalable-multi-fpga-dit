@@ -1,0 +1,14 @@
+{
+  "mem_topology": {
+    "m_count": 1,
+    "m_mem_data": [
+      {
+        "m_type": "MEM_DDR4",
+        "m_used": 1,
+        "m_sizeKB": 2097152,
+        "m_tag": "PSDDR",
+        "m_base_address": 0
+      }
+    ]
+  }
+}

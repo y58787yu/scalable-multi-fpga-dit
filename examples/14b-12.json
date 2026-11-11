@@ -1,0 +1,142 @@
+{
+  "model": "14b",
+  "groups": 3,
+  "user": "xilinx",
+  "board_python": "python3",
+  "sudo": true,
+  "remote_root": "/home/xilinx/cosmos",
+  "nodes": [
+    {
+      "group": 0,
+      "rank": 0,
+      "host": "zcu-g0-r0.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 0,
+      "rank": 1,
+      "host": "zcu-g0-r1.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 0,
+      "rank": 2,
+      "host": "zcu-g0-r2.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 0,
+      "rank": 3,
+      "host": "zcu-g0-r3.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 1,
+      "rank": 0,
+      "host": "zcu-g1-r0.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 1,
+      "rank": 1,
+      "host": "zcu-g1-r1.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 1,
+      "rank": 2,
+      "host": "zcu-g1-r2.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 1,
+      "rank": 3,
+      "host": "zcu-g1-r3.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 2,
+      "rank": 0,
+      "host": "zcu-g2-r0.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 2,
+      "rank": 1,
+      "host": "zcu-g2-r1.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 2,
+      "rank": 2,
+      "host": "zcu-g2-r2.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 2,
+      "rank": 3,
+      "host": "zcu-g2-r3.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

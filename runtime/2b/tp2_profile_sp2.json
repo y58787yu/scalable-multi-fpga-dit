@@ -1,0 +1,180 @@
+{
+  "kind": "C209_2B_TP2_SP12_FIXED_APPLE_PROFILE_V1",
+  "hardware_id": "0xC2092B10",
+  "runtime_id": "0xC2092B11",
+  "ip_version": "20.0",
+  "model": "Cosmos-Predict2-2B-Text2Image",
+  "part": "xczu9eg-ffvb1156-2-e",
+  "boards": 4,
+  "tensor_parallel": 2,
+  "pipeline_stages": 1,
+  "layers": 28,
+  "layers_per_stage": 28,
+  "tokens": 4096,
+  "hidden": 2048,
+  "heads": 16,
+  "head_dim": 128,
+  "local_heads": 8,
+  "local_width": 1024,
+  "local_ffn": 4096,
+  "updates": 19,
+  "size": 1024,
+  "logical_cross_keys": 512,
+  "physical_mac_lanes": 1280,
+  "slow_mhz": 200,
+  "fast_mhz": 300,
+  "tile_rows": 256,
+  "tile_columns": 128,
+  "tile_k": 128,
+  "sfp_ports": 2,
+  "packet_max_bytes": 8192,
+  "sequence_parallel": 2,
+  "weight_groups": 2,
+  "layers_per_weight_group": 14,
+  "sequence_rows": [
+    2048,
+    2048
+  ],
+  "sequence_offsets": [
+    0,
+    2048
+  ],
+  "partial_rows": [
+    128,
+    256
+  ],
+  "compute_rows": [
+    2048,
+    4096
+  ],
+  "physical_mac_shards": 5,
+  "mac_lanes_per_shard": 256,
+  "reusable_asset_profile_sha256": null,
+  "fixed_apple_ops": {
+    "version": 1,
+    "stages": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "shared_prefix": true,
+    "kv_global": true,
+    "ffn_gelu_fused": true,
+    "f16_a_quantized_on_read": true,
+    "rms_rope_fused": true,
+    "modulation_gain_precomputed": true,
+    "adaln_scale_policy": "SCL1_ANALYTIC_POW2_V1",
+    "kv_value_scale_policy": "PV_PROB_SCALE_FOLDED_V1",
+    "norm_reduction": "FP32_BANK_LOCAL16_V1"
+  },
+  "fixed_task": {
+    "positive": "A red apple on a wooden table, warm sunlight, detailed photograph.",
+    "negative": "blurry, distorted, low quality, noisy",
+    "stored_keys": [
+      16,
+      11
+    ],
+    "logical_keys": 512,
+    "allowed_generation_input": "seed",
+    "runtime_schedule": "existing_complete_schedule_unchanged",
+    "asset_manifest_sha256": null,
+    "input_manifest_sha256": null,
+    "asset_updates": 10,
+    "preset": "cosmos2b1024-10step-tp2-sp12-v1",
+    "asset_status": "PREPARATION_REQUIRED_NO_14B_ASSET_REUSE"
+  },
+  "overlap_upgrade": {
+    "version": 1,
+    "baseline": "Y3",
+    "branch_schedule": "FIXED_OPERATOR_INTERLEAVE_V1",
+    "tp_epoch": "LAYER8_OPERATOR2_BRANCH_TP2_FUSED_V1",
+    "kv_scalar_bits": 16,
+    "tp_scalar_bits": 32,
+    "matrix_operand_bits": 16,
+    "matrix_accumulator_bits": 48,
+    "v_scale_semantics": "VS_INCLUDES_PROBABILITY_SCALE_32760_V1",
+    "adaln_scale_record": "SCL1_32B_V1",
+    "target_round_seconds": 80,
+    "resource_net_growth_budget": {
+      "LUT": 4000,
+      "BRAM36": 8,
+      "DSP": 40
+    },
+    "tp_batch_controller": {
+      "base": "0xA0210000",
+      "identity": "0xC209B201",
+      "required": true,
+      "revision": 2
+    }
+  },
+  "integrated_upgrade": {
+    "baseline": "12board_67.4s_architecture_only_not_2B_measurement",
+    "baseline_seconds": null,
+    "gemm_dsp_chain_rows": 4,
+    "weight_layout": "C209_B_N640_K128_SHARD128_I16_V1",
+    "packed_b_flag": 64,
+    "packed_b_record_bit": 17,
+    "kv_layout": "SELF_KV16_K_HEAD_TOKEN_FOLDED_VS_V2",
+    "attention_mapping": "SAME_HEAD_5Q_X_2_CONTEXTS_LOCAL8_HEADS",
+    "attention_contexts": 10,
+    "softmax_lanes": 8,
+    "adaln": "TWO_COMMITTED_ROW_SLOTS_STATS_EMIT_OVERLAP",
+    "arm_plan": "PREBOUND_LAYER_AND_NATIVE_TILE_HANDOFF",
+    "target_round_seconds": 60,
+    "resource_percent_goal": 75,
+    "new_board_test_authorized": false
+  },
+  "finite_profiles": {
+    "SP1": {
+      "boards": 2,
+      "sequence_rows": [
+        4096
+      ],
+      "sequence_offsets": [
+        0
+      ],
+      "layers_per_weight_group": 28
+    },
+    "SP2": {
+      "boards": 4,
+      "sequence_rows": [
+        2048,
+        2048
+      ],
+      "sequence_offsets": [
+        0,
+        2048
+      ],
+      "layers_per_weight_group": 14
+    }
+  },
+  "transport": {
+    "tp_port": 1,
+    "tp_peer": "rank_xor_1",
+    "tp_rounds": 1,
+    "tp_operation": "FUSED_SUM_GATE_RESIDUAL",
+    "sp_ports": [
+      2
+    ],
+    "sp1_remote_members": 0,
+    "sp2_peer": "group_xor_1",
+    "sp2_wiring": "group0.P2-group1.P2",
+    "absent_ports": [
+      0,
+      3
+    ],
+    "kv_dispatch": "ORDERED_SINGLE_LANE_FULL_DUPLEX_V1"
+  },
+  "compute_hardware_id": "0xC2092B00",
+  "present_ports": [
+    1,
+    2
+  ],
+  "active_ports": [
+    1,
+    2
+  ],
+  "shell_variant": "C209_2B_TP2_SP12_TWO_PORT_V1"
+}

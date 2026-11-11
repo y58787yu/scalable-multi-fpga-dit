@@ -1,0 +1,23 @@
+{
+  "c_function_name": "c209_kv_broadcast_rtl",
+  "rtl_top_module_name": "c209_kv_broadcast_rtl",
+  "c_files": [{"c_file": "../src/c209_kv_broadcast_rtl.cpp", "cflag": ""}],
+  "rtl_files": ["c209_kv_broadcast_rtl.v"],
+  "c_parameters": [
+    {"c_name": "requests", "c_port_direction": "in", "rtl_ports": {"FIFO_empty_flag": "requests_empty_n", "FIFO_read_enable": "requests_read", "FIFO_data_read_in": "requests_dout"}},
+    {"c_name": "payload", "c_port_direction": "in", "rtl_ports": {"FIFO_empty_flag": "payload_empty_n", "FIFO_read_enable": "payload_read", "FIFO_data_read_in": "payload_dout"}},
+    {"c_name": "output0", "c_port_direction": "out", "rtl_ports": {"FIFO_full_flag": "output0_full_n", "FIFO_write_enable": "output0_write", "FIFO_data_write_out": "output0_din"}},
+    {"c_name": "output1", "c_port_direction": "out", "rtl_ports": {"FIFO_full_flag": "output1_full_n", "FIFO_write_enable": "output1_write", "FIFO_data_write_out": "output1_din"}},
+    {"c_name": "output2", "c_port_direction": "out", "rtl_ports": {"FIFO_full_flag": "output2_full_n", "FIFO_write_enable": "output2_write", "FIFO_data_write_out": "output2_din"}},
+    {"c_name": "output3", "c_port_direction": "out", "rtl_ports": {"FIFO_full_flag": "output3_full_n", "FIFO_write_enable": "output3_write", "FIFO_data_write_out": "output3_din"}},
+    {"c_name": "output4", "c_port_direction": "out", "rtl_ports": {"FIFO_full_flag": "output4_full_n", "FIFO_write_enable": "output4_write", "FIFO_data_write_out": "output4_din"}}
+  ],
+  "rtl_common_signal": {
+    "module_clock": "ap_clk", "module_reset": "ap_rst", "module_clock_enable": "ap_ce",
+    "ap_ctrl_chain_protocol_idle": "ap_idle", "ap_ctrl_chain_protocol_start": "ap_start",
+    "ap_ctrl_chain_protocol_ready": "ap_ready", "ap_ctrl_chain_protocol_done": "ap_done",
+    "ap_ctrl_chain_protocol_continue": "ap_continue"
+  },
+  "rtl_performance": {"latency": "1", "II": "0"},
+  "rtl_resource_usage": {"FF": "320", "LUT": "160", "BRAM": "0", "URAM": "0", "DSP": "0"}
+}

@@ -1,0 +1,196 @@
+{
+  "c_function_name": "c209_five_mac_rtl",
+  "rtl_top_module_name": "c209_five_mac_rtl",
+  "c_files": [
+    {
+      "c_file": "../src/c209_five_mac_rtl.cpp",
+      "cflag": ""
+    }
+  ],
+  "rtl_files": [
+    "c209_dsp_pe.v",
+    "c209_dsp_array16x4.v",
+    "c209_five_mac_column_bank.v",
+    "c209_five_mac_core.v",
+    "c209_mac_async_fifo.v",
+    "c209_mac_result_cdc.v",
+    "c209_panel_transposer.v",
+    "c209_five_mac_rtl.v"
+  ],
+  "c_parameters": [
+    {
+      "c_name": "commands",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "commands_empty_n",
+        "FIFO_read_enable": "commands_read",
+        "FIFO_data_read_in": "commands_dout"
+      }
+    },
+    {
+      "c_name": "a0",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "a0_empty_n",
+        "FIFO_read_enable": "a0_read",
+        "FIFO_data_read_in": "a0_dout"
+      }
+    },
+    {
+      "c_name": "b0",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "b0_empty_n",
+        "FIFO_read_enable": "b0_read",
+        "FIFO_data_read_in": "b0_dout"
+      }
+    },
+    {
+      "c_name": "r0",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "FIFO_full_flag": "r0_full_n",
+        "FIFO_write_enable": "r0_write",
+        "FIFO_data_write_out": "r0_din"
+      }
+    },
+    {
+      "c_name": "a1",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "a1_empty_n",
+        "FIFO_read_enable": "a1_read",
+        "FIFO_data_read_in": "a1_dout"
+      }
+    },
+    {
+      "c_name": "b1",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "b1_empty_n",
+        "FIFO_read_enable": "b1_read",
+        "FIFO_data_read_in": "b1_dout"
+      }
+    },
+    {
+      "c_name": "r1",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "FIFO_full_flag": "r1_full_n",
+        "FIFO_write_enable": "r1_write",
+        "FIFO_data_write_out": "r1_din"
+      }
+    },
+    {
+      "c_name": "a2",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "a2_empty_n",
+        "FIFO_read_enable": "a2_read",
+        "FIFO_data_read_in": "a2_dout"
+      }
+    },
+    {
+      "c_name": "b2",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "b2_empty_n",
+        "FIFO_read_enable": "b2_read",
+        "FIFO_data_read_in": "b2_dout"
+      }
+    },
+    {
+      "c_name": "r2",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "FIFO_full_flag": "r2_full_n",
+        "FIFO_write_enable": "r2_write",
+        "FIFO_data_write_out": "r2_din"
+      }
+    },
+    {
+      "c_name": "a3",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "a3_empty_n",
+        "FIFO_read_enable": "a3_read",
+        "FIFO_data_read_in": "a3_dout"
+      }
+    },
+    {
+      "c_name": "b3",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "b3_empty_n",
+        "FIFO_read_enable": "b3_read",
+        "FIFO_data_read_in": "b3_dout"
+      }
+    },
+    {
+      "c_name": "r3",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "FIFO_full_flag": "r3_full_n",
+        "FIFO_write_enable": "r3_write",
+        "FIFO_data_write_out": "r3_din"
+      }
+    },
+    {
+      "c_name": "a4",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "a4_empty_n",
+        "FIFO_read_enable": "a4_read",
+        "FIFO_data_read_in": "a4_dout"
+      }
+    },
+    {
+      "c_name": "b4",
+      "c_port_direction": "in",
+      "rtl_ports": {
+        "FIFO_empty_flag": "b4_empty_n",
+        "FIFO_read_enable": "b4_read",
+        "FIFO_data_read_in": "b4_dout"
+      }
+    },
+    {
+      "c_name": "r4",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "FIFO_full_flag": "r4_full_n",
+        "FIFO_write_enable": "r4_write",
+        "FIFO_data_write_out": "r4_din"
+      }
+    },
+    {
+      "c_name": "perf",
+      "c_port_direction": "out",
+      "rtl_ports": {
+        "FIFO_full_flag": "perf_full_n",
+        "FIFO_write_enable": "perf_write",
+        "FIFO_data_write_out": "perf_din"
+      }
+    }
+  ],
+  "rtl_common_signal": {
+    "module_clock": "ap_clk",
+    "module_reset": "ap_rst",
+    "module_clock_enable": "ap_ce",
+    "ap_ctrl_chain_protocol_idle": "ap_idle",
+    "ap_ctrl_chain_protocol_start": "ap_start",
+    "ap_ctrl_chain_protocol_ready": "ap_ready",
+    "ap_ctrl_chain_protocol_done": "ap_done",
+    "ap_ctrl_chain_protocol_continue": "ap_continue"
+  },
+  "rtl_performance": {
+    "latency": "0",
+    "II": "0"
+  },
+  "rtl_resource_usage": {
+    "FF": "45000",
+    "LUT": "35000",
+    "BRAM": "864",
+    "URAM": "0",
+    "DSP": "1280"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "model": "2b",
+  "groups": 2,
+  "user": "xilinx",
+  "board_python": "python3",
+  "sudo": true,
+  "remote_root": "/home/xilinx/cosmos",
+  "nodes": [
+    {
+      "group": 0,
+      "rank": 0,
+      "host": "zcu-g0-r0.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 0,
+      "rank": 1,
+      "host": "zcu-g0-r1.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 1,
+      "rank": 0,
+      "host": "zcu-g1-r0.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "group": 1,
+      "rank": 1,
+      "host": "zcu-g1-r1.local",
+      "rx_polarities": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ]
+}

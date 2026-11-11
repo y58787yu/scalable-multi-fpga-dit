@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="cosmos_tp4_sp3"><platform vendor="xilinx" boardid="zcu102" name="cosmos_tp4_sp3" featureRomTime="0">
+<version major="1" minor="0"/><description>PS DDR allocation metadata; no executable kernels or board timing claim.</description>
+<board name="xilinx.com:zcu102:part0" vendor="xilinx.com" fpga="xczu9eg-ffvb1156-2-e"><interfaces/><memories><memory name="PSDDR_LOW" type="ddr4" size="2GB"/></memories></board>
+<host architecture="aarch64"/><device name="fpga0" fpgaDevice="zynquplus:xczu9eg:ffvb1156:-2:e" addrWidth="64"><core name="OCL_REGION_0" target="bitstream" type="clc_region" clockFreq="0MHz" numComputeUnits="0"/></device>
+</platform></project>

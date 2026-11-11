@@ -1,0 +1,211 @@
+{
+  "schema": "TP4_COMMON_RUNTIME_PROTOCOL_V1",
+  "kernel": "cosmos2b_tile",
+  "hardware_id": "0xC2091000",
+  "profile_sha256": "9ae4b5152a0ac80ef77fbd506dd8c23b02f70264ec0cba269ec1aa44dd5508c6",
+  "compute_ip_version": "16.0",
+  "runtime_id": "0xC2091001",
+  "base": 2684354560,
+  "registers": {
+    "act_offset": 16,
+    "weights_offset": 28,
+    "output_r_offset": 40,
+    "aux_offset": 52,
+    "rows": 72,
+    "aux0": 196,
+    "error": 260,
+    "completed_tiles": 276,
+    "perf_elapsed_cycles": 292,
+    "perf_owner_a_cycles": 308,
+    "perf_owner_b_cycles": 324,
+    "perf_source_empty_cycles": 340,
+    "perf_result_stall_cycles": 356,
+    "perf_a_commits": 372,
+    "perf_b_commits": 388,
+    "perf_no_request_cycles": 404
+  },
+  "pointer_registers": [
+    "act_offset",
+    "aux0",
+    "aux_offset",
+    "output_r_offset",
+    "weights_offset"
+  ],
+  "network_interfaces": [
+    {
+      "lane": 0,
+      "tx_dma_base": 2684420096,
+      "link_base": 2684485632,
+      "reducer_base": 2686451712,
+      "bulk_only": false,
+      "sum_only": true,
+      "wire_lane": 0,
+      "residual_dma_base": null
+    },
+    {
+      "lane": 1,
+      "tx_dma_base": 2684682240,
+      "link_base": 2684489728,
+      "reducer_base": 2686455808,
+      "bulk_only": false,
+      "sum_only": false,
+      "wire_lane": 1,
+      "residual_dma_base": 2685599744
+    },
+    {
+      "lane": 2,
+      "tx_dma_base": 2684944384,
+      "link_base": 2684493824,
+      "reducer_base": 2686459904,
+      "bulk_only": true,
+      "sum_only": false,
+      "wire_lane": 2,
+      "residual_dma_base": null
+    },
+    {
+      "lane": 3,
+      "tx_dma_base": 2685206528,
+      "link_base": 2684497920,
+      "reducer_base": 2686464000,
+      "bulk_only": true,
+      "sum_only": false,
+      "wire_lane": 2,
+      "residual_dma_base": null
+    }
+  ],
+  "control_header_verified": true,
+  "control_header_sha256": "572f382fb202f4feaa015983e338c4f758b4b4d2950e814627d60463883fe8f5",
+  "hwh_sha256": "20de73250646b3594946a1e715c62539618e9dccd0e04918732faa462b77a435",
+  "compute_control_contract": "FIVE_MINIMAL_CSR_V1",
+  "fixed_execution_plan": {
+    "revision": 1,
+    "descriptor_bytes": 8192,
+    "slots_per_branch": 2,
+    "native_counter_snapshot": 8,
+    "completion": "FRESH_COMPUTE_DONE_THEN_TP_TWO_ROUND_DRAIN"
+  },
+  "required_asset_overlay": {
+    "file": "integrated_assets.json",
+    "b_layout": "C209_B_N640_K128_SHARD128_I16_V1",
+    "k_layout": "C209_K_HEAD_TOKEN128_I16_V1"
+  },
+  "bitstream_generated": true,
+  "target_control_mhz": 200,
+  "target_mac_mhz": 300,
+  "actual_clocks_measured": false,
+  "required_port_masks": {
+    "compute_only": 0,
+    "sp3": 15
+  },
+  "execution_layout": "TP4_SP3",
+  "descriptor_format": "FIVE_FIXED64_V1",
+  "program_abi": {
+    "format": "FIVE_FIXED64_V1",
+    "record_bytes": 64,
+    "max_jobs": 128,
+    "header_magic": 197,
+    "header_magic_bits": [
+      31,
+      24
+    ],
+    "header_reserved_zero_mask": "0xffffffff00fc0000",
+    "address_fields": [
+      "a",
+      "b",
+      "c",
+      "aux0",
+      "aux1",
+      "aux2",
+      "aux3"
+    ],
+    "shape_encoding": "FIXED_APPLE_1000_INTEGRATED_V1",
+    "supported_ops": [
+      1,
+      2,
+      4,
+      7,
+      13,
+      14,
+      15,
+      16,
+      17
+    ]
+  },
+  "fixed_apple_ops": {
+    "version": 1,
+    "stages": [
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "shared_prefix": true,
+    "kv_global": true,
+    "ffn_gelu_fused": true,
+    "f16_a_quantized_on_read": true,
+    "rms_rope_fused": true,
+    "modulation_gain_precomputed": true,
+    "adaln_scale_policy": "SCL1_ANALYTIC_POW2_V1",
+    "kv_value_scale_policy": "PV_PROB_SCALE_FOLDED_V1",
+    "norm_reduction": "FP32_BANK_LOCAL16_V1"
+  },
+  "fixed_task": {
+    "positive": "A red apple on a wooden table, warm sunlight, detailed photograph.",
+    "negative": "blurry, distorted, low quality, noisy",
+    "stored_keys": [
+      16,
+      11
+    ],
+    "logical_keys": 512,
+    "allowed_generation_input": "seed",
+    "runtime_schedule": "existing_complete_schedule_unchanged",
+    "asset_manifest_sha256": "6ca4f59583e9224082f99b4248da7019576c8b494b82420c81c7b7de7769dd96",
+    "input_manifest_sha256": "3a334b05c7a6350040fbc567c882b6dd75266a9a3d58dc970430cc942e2fc92b",
+    "asset_updates": 10,
+    "preset": "cosmos14b1024-10step-v1_01"
+  },
+  "physical_mac_shards": 5,
+  "physical_mac_lanes": 1280,
+  "transport_topology": "TP4xSP3_DIRECT_FOUR_PORT",
+  "sum_only_reducer_ports": [
+    0
+  ],
+  "fused_residual_ports": [
+    1
+  ],
+  "native_sum_only_mask": 1,
+  "tp_batch_controller": {
+    "base": 2686517248,
+    "identity": 3255414785,
+    "revision": 1,
+    "required": true,
+    "expected_bit_id": 3255373824
+  },
+  "bit_sha256": "08825709f331224e48826807f9d9333a0cc70fc0105c267c406530b81e61bf6f",
+  "native_library_identity": {
+    "path": "libcosmos_tp4.so",
+    "sha256": "2030890c16b519a321ade7109746c20587f263b642f8184f243c1c7c54f49131",
+    "bytes": 74688,
+    "elf_machine": "AArch64",
+    "runtime_id": "0xC2091001",
+    "sum_only_mask": 1,
+    "chunk_pipeline_revision": 1,
+    "chunk_pipeline_entry_present": true,
+    "fixed_plan_revision": 1,
+    "fixed_plan_entrypoints_present": true,
+    "native_fixed_tp_control_mode": 2,
+    "required_entrypoints": [
+      "cosmos_fixed_completion_size",
+      "cosmos_fixed_project_cancel",
+      "cosmos_fixed_project_compute",
+      "cosmos_fixed_project_reduce",
+      "cosmos_fixed_projection_size",
+      "cosmos_fixed_stage",
+      "cosmos_tp4_bulk_duplex_span",
+      "cosmos_tp4_pair_batch",
+      "cosmos_tp4_pair_pipeline"
+    ],
+    "method": "READ_ONLY_ELF_CONST_RETURN_DECODE_NOT_EXECUTED"
+  }
+}
